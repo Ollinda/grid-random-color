@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 70%;
+  max-height: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(12em, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+}
+
+.container .card {
+  padding: 0.5em;
+  border-radius: 0.1em;
+  -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.container .card .infoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .card .infoContainer .infotitle {
+  font-weight: 600;
+}
+
+.container .card:nth-child(8) {
+  background-color: #facf81;
+}
+
+.container .card:nth-child(4) {
+  background-color: #c6b9d3;
+}
+
+.container .card:nth-child(5) {
+  background-color: #6265de;
+}
+
+.container .card:nth-child(10) {
+  background-color: white;
+}
+/*# sourceMappingURL=main.css.map */
